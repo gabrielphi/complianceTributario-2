@@ -31,13 +31,13 @@ class EmpresasController extends Controller
 
         $empresas->save();
 
-        return response("Tudo certo", 200);
+        return response(["OK"], 200);
     }
 
     public function delete(Request $req){
         $empresas = Empresas::find($req->id);
 
         $empresas->delete();
-        return response("Produto Apagado",200);
+        return response(["OK"],200);
     }
 }

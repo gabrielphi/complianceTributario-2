@@ -1,0 +1,30 @@
+<div class="cadastro-container">
+    <div class="cadastro-box">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h2>Cadastro</h2>
+        
+        <form>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroEmp.name" type="text" id="nome" name="nome" placeholder="Nome da Empresa" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroEmp.cnpj" type="text" id="cnpj" name="cnpj" placeholder="CNPJ" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroEmp.inscricaoEstadual" type="text" id="incricao" name="incricao" placeholder="Incrição Estadual" required>
+            </div>
+            <div class="input-group">
+                    <select [(ngModel)]="cadastroEmp.tag" id="country" name="country">
+                    <option value="Mercado">Mercado</option>
+                    <option value="Mecanica">Mecânica</option>
+                </select>
+            </div>
+
+            
+            <button (click)="onSave()" class="cadastro-button">Cadastar</button>
+        </form>
+    </div>
+</div>
+

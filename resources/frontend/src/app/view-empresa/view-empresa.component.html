@@ -1,0 +1,38 @@
+<p>view-empresa works! {{user_id}}</p>
+<table>
+    <tr>
+        <th>Nome do Produto</th>
+        <th>Codigo de Barras</th>
+        <th>NCM do Produto</th>
+        <th>Aliquota ICMS</th>
+        <th>CST ICMS</th>
+        <th>Aliquota PIS</th>
+        <th>CST PIS</th>
+        <th>Aliquota COFINS</th>
+        <th>CST COFINS</th>
+    </tr>
+    @for (item of userList; track $index){
+        
+        <tr>
+            <td>{{item.nome_produto}}</td>
+            <td>{{item.codigo_de_barras}}</td>
+            <td>{{item.ncm_produto}}</td>
+            <td>{{item.icms_aliquota}}</td>
+            <td>{{item.icms_cst}}</td>
+            <td>{{item.pis_aliquota}}</td>
+            <td>{{item.pis_cst}}</td>
+            <td>{{item.cofins_aliquota}}</td>
+            <td>{{item.cofins_cst}}</td>
+        </tr>
+    
+    
+    
+    
+    
+    
+    
+    
+
+}
+
+</table>

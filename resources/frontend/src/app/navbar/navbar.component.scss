@@ -1,0 +1,56 @@
+@import "../../styles.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.navbar-topo-grid{
+
+    display: grid;
+    gap: 10px;  // Ajuste a quantidade de espaço entre os itens conforme necessário
+    padding: 20px;
+    background-color: #dcdcddff;  
+    border-radius: 10px;  // Bordas arredondadas
+    border-bottom: 3px solid #1985a1ff;
+    
+    
+
+.navbar-topo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-family: "Kanit", sans-serif;
+
+.navbar-logo{
+    font-weight: 700;
+    font-size: 40px;
+    color: $outer-space;
+}
+
+
+.navbar-itens {
+    list-style: none;
+    display: flex;
+
+     li {
+        padding-left: 40px;
+        font-size: 20px;
+        
+
+        a{
+            color: $outer-space;
+            text-decoration: none;
+        }
+
+    }
+
+    
+    
+}
+
+}
+
+}

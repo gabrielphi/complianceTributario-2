@@ -1,0 +1,55 @@
+@import "../../styles.scss";
+
+.inicio-grid {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+    padding:10px;
+
+
+}
+
+.inicio-grid-button{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 30%;
+    margin-top:1em;
+
+    button{
+        border-radius:5px;
+        border: none;
+        background-color: $outer-space;
+        color:white;
+        font-size:18px;
+        transition-duration: 0.4s;
+        font-family: "Kanit", sans-serif;
+    }
+    
+    .inicial-view-button:hover{
+        background-color: $blue-munsell;
+        font-size:19px;
+    }
+    .inicial-delete-button:hover{
+        background-color: #D25741;
+        font-size:19px;
+    }
+    .inicial-edit-button:hover{
+        background-color: $paynes-gray;
+        font-size:19px;
+    }
+}
+
+.inicio-grid-item{
+    padding:10px;
+    border: 2px solid $outer-space;
+    border-radius:20px;
+    background-color: $platinum;
+}
+
+.inicial-infos{
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+}
+
