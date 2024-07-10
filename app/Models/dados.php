@@ -7,20 +7,15 @@ use Illuminate\Database\Eloquent\Model;
 
 class dados extends Model
 {
+    public $timestamps = false;
     use HasFactory;
     protected $fillable = [
         'nome_produto',
         'codigo_de_barras',
-        'ncm_produto',
-        'icms_aliquota',
-        'icms_cst',
-        'pis_aliquota',
-        'pis_cst',
-        'cofins_aliquota',
-        'cofins_cst',
-        'empresa_id'
-
-
-
+        'ncm_produto'
     ];
+
+    public function tributacao(){ 
+        return $this->hasMany('App\Models\tributacao');
+    }
 }

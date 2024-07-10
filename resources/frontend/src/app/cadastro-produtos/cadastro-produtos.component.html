@@ -1,0 +1,23 @@
+<div class="cadastro-container">
+    <div class="cadastro-box">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h2>Cadastro</h2>
+        
+        <form>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroPrd.nome_produto" type="text" id="nome" name="nome" placeholder="Nome do Produto" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroPrd.codigo_de_barras" type="text" id="cnpj" name="cnpj" placeholder="Codigo de Barras" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroPrd.ncm_produto" type="text" id="incricao" name="incricao" placeholder="NCM Produto" required>
+            </div>
+
+            
+            <button (click)="onSave()" class="cadastro-button">Cadastar</button>
+        </form>
+    </div>
+</div>

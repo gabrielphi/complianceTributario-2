@@ -1,0 +1,38 @@
+<div class="cadastro-container">
+    <div class="cadastro-box">
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+        </div>
+        <h2>Cadastro</h2>
+        
+        <form>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.icms_aliquota" type="text" id="nome" name="nome" placeholder="Aliquota ICMS" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.icms_cst" type="text" id="cnpj" name="cnpj" placeholder="CST ICSM" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.pis_aliquota" type="text" id="incricao" name="incricao" placeholder="PIS Aliquota" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.pis_cst" type="text" id="incricao" name="incricao" placeholder="PIS CST" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.cofins_aliquota" type="text" id="incricao" name="incricao" placeholder="Cofins Aliquota" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.cofins_cst" type="text" id="incricao" name="incricao" placeholder="Cofins CST" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.tipo_tributacao" type="text" id="incricao" name="incricao" placeholder="Tipo Tributação" required>
+            </div>
+            <div class="input-group">
+                <input [(ngModel)]="cadastroTrib.id_produto_fk" type="text" id="incricao" name="incricao" placeholder="Produto ID" required>
+            </div>
+
+            
+            <button (click)="onSave()" class="cadastro-button">Cadastar</button>
+        </form>
+    </div>
+</div>

@@ -14,7 +14,7 @@ class DadosController extends Controller
      */
     public function index()
     {
-        return dados::all();
+        
     }
 
     /**
@@ -35,13 +35,6 @@ class DadosController extends Controller
             "nome_produto" => $req->nome_produto,
             "codigo_de_barras" => $req->codigo_de_barras,
             "ncm_produto" => $req->ncm_produto,
-            "icms_aliquota" => $req->icms_aliquota,
-            "icms_cst" => $req->icms_cst,
-            "pis_aliquota" => $req->pis_aliquota,
-            "pis_cst" => $req->pis_cst,
-            "cofins_aliquota" => $req->cofins_aliquota,
-            "cofins_cst" => $req->cofins_cst,
-            "empresa_id" => $req->empresa_id,
         ]);
         return response(["OK"], 200);
     }
@@ -51,8 +44,7 @@ class DadosController extends Controller
      */
     public function show(Request $req)
     {
-        return dados::all()
-        ->where('empresa_id', $req->empres_id);
+        return dados::all();
     }
 
     /**

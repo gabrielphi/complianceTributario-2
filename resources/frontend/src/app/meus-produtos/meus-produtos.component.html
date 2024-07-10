@@ -1,0 +1,42 @@
+<a routerLink="/cadastrarProduto">Cadastro de Produto</a>
+<a routerLink="/cadastrarTributo">Cadastro de Tributo</a>
+
+<table>
+    <tr>
+        <th>ID Produto</th>
+        <th>Nome do Produto</th>
+        <th>Codigo de Barras</th>
+        <th>NCM do Produto</th>
+        <th>Ações</th>
+    </tr>
+    @for (item of userList; track $index){
+        
+        <tr>
+            <td>{{item.id_produto}}</td>
+            <td>{{item.nome_produto}}</td>
+            <td>{{item.codigo_de_barras}}</td>
+            <td>{{item.ncm_produto}}</td>
+            <td><button (click)="getTributoProduct(item.id_produto)"></button></td>
+        </tr>
+}
+
+</table>
+<table>
+    <th>ICMS Aliquota</th>
+    <th>ICMS CST</th>
+    <th>PIS Aliquota</th>
+    <th>PIS CST</th>
+    <th>Cofins Aliquota</th>
+    <th>Cofins CST</th>
+@for (tributo of tributeList; track $index){
+        
+    <tr>
+        <td>{{tributo.icms_aliquota}}</td>
+        <td>{{tributo.icms_cst}}</td>
+        <td>{{tributo.pis_aliquota}}</td>
+        <td>{{tributo.pis_cst}}</td>
+        <td>{{tributo.cofins_aliquota}}</td>
+        <td>{{tributo.cofins_cst}}</td>
+    </tr>
+}
+</table>

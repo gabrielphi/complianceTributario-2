@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\EmpresasController;
 use App\Http\Controllers\DadosController;
+use App\Http\Controllers\TributacaoController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,3 +17,7 @@ Route::delete('empresas/{id}', [EmpresasController::class, "delete"]);
 
 Route::get('produtos/{empres_id}',[DadosController::class, "show"]);
 Route::post('produtos', [DadosController::class, "store"]);
+
+
+Route::post('tributo', [TributacaoController::class, "store"]);
+Route::get('tributo/{id}', [TributacaoController::class, "show"]);

@@ -15,15 +15,8 @@ return new class extends Migration
             $table->increments('id_produto');
             $table->string('nome_produto');
             $table->integer('codigo_de_barras');
-            $table->integer('ncm_produto');
-            $table->float('icms_aliquota', precision: 1);
-            $table->integer('icms_cst');
-            $table->float('pis_aliquota', precision: 1);
-            $table->integer('pis_cst');
-            $table->float('cofins_aliquota', precision: 1);
-            $table->integer('cofins_cst');
-            $table->integer('empresa_id')->unsigned();
-            $table->foreign('empresa_id')->references('id')->on('empresas');
+            $table->integer('ncm_produto');  
+            
         });
     }
     /**
