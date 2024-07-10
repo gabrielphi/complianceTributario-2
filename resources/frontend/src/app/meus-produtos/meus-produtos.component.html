@@ -1,5 +1,5 @@
-<button><a routerLink="/cadastrarProduto">Cadastro de Produto</a></button>
-<button><a routerLink="/cadastrarTributo">Cadastro de Tributo</a></button>
+<button class="button2"><a routerLink="/cadastrarProduto">Cadastro de Produto</a></button>
+<button class="button2"><a routerLink="/cadastrarTributo">Cadastro de Tributo</a></button>
 
 <table>
     <tr>
@@ -16,7 +16,7 @@
             <td>{{item.nome_produto}}</td>
             <td>{{item.codigo_de_barras}}</td>
             <td>{{item.ncm_produto}}</td>
-            <td><button (click)="getTributoProduct(item.id_produto)"></button></td>
+            <td><button (click)="getTributoProduct(item.id_produto)">Impostos</button></td>
         </tr>
 }
 
