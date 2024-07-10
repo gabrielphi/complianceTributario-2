@@ -23,13 +23,13 @@ export class InicialComponent implements OnInit {
       this.getAllEmpresas();  
     }
     getAllEmpresas(){
-      this.http.get("http://127.0.0.1:8000/api/empresas").subscribe((result:any)=>{
+      this.http.get("http://34.67.250.26:8000/api/empresas").subscribe((result:any)=>{
         this.userList = result;
       })
     }
 
     deleteEmpresa(id: number){
-      this.http.delete("http://127.0.0.1:8000/api/empresas/" + id).subscribe((result:any)=>{
+      this.http.delete("http://34.67.250.26:8000/api/empresas/" + id).subscribe((result:any)=>{
         if(result = ['OK']){
           alert("Empresa apagada com sucesso");
           this.getAllEmpresas();

@@ -46,14 +46,14 @@ export class MeusProdutosComponent {
     this.getAllProdutos();  
   }
   getAllProdutos(){
-    this.http.get("http://127.0.0.1:8000/api/produtos/" + this.user_id).subscribe((result:any)=>{
+    this.http.get("http://34.67.250.26:8000/api/produtos/" + this.user_id).subscribe((result:any)=>{
       this.userList = result;
     })
   }
 
   getTributoProduct(id: any){
     alert(id);
-    this.http.get("http://127.0.0.1:8000/api/tributo/" + id).subscribe((result:any)=>{
+    this.http.get("http://34.67.250.26:8000/api/tributo/" + id).subscribe((result:any)=>{
       this.tributeList = result;
     })
   }

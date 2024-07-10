@@ -19,8 +19,7 @@ export class CadastroEmpresasComponent {
     http = inject(HttpClient);
     onSave(){
       
-        this.http.post("http://127.0.0.1:8000/api/empresas", this.cadastroEmp).subscribe((res:any)=>{
-          debugger;
+        this.http.post("http://34.67.250.26:8000/api/empresas", this.cadastroEmp).subscribe((res:any)=>{
           if(res = ['OK']) {
             alert("Empresa criada com sucesso")
           } else{

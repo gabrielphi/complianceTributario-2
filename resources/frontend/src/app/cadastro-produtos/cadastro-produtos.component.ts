@@ -19,8 +19,7 @@ export class CadastroProdutosComponent {
     http = inject(HttpClient);
     onSave(){
       
-        this.http.post("http://127.0.0.1:8000/api/produtos", this.cadastroPrd).subscribe((res:any)=>{
-          debugger;
+        this.http.post("http://34.67.250.26:8000/api/produtos", this.cadastroPrd).subscribe((res:any)=>{
           if(res = ['OK']) {
             alert("Produto criado com sucesso")
           } else{
